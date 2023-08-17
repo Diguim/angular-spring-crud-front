@@ -1,5 +1,21 @@
 # CrudAngular
 
+Parte FRONT-END de um projeto de CRUD com os frameworks ANGULAR e SPRING (Java).
+
+#### Tecnologias utilizadas:
+- Angular 16
+  - Components
+  - Module
+  - Service
+  - Pipes
+- Angular Material 
+- TypeScript
+- HTML CSS
+- JSON
+
+
+
+---
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
 
 ## Development server
