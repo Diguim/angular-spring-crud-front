@@ -13,7 +13,12 @@ Parte FRONT-END de um projeto de CRUD com os frameworks ANGULAR e SPRING (Java).
 - HTML CSS
 - JSON
 
+##### Observações:
+- A partir do momento que foi preciso utilizar um `proxy.conf.js`, o jeito de iniciar um dev server mudou de `ng serve` para `npm run start`. Assim será iniciado o servidor com redirecionamento para podermos conectar com a API Java Spring.
 
+---
+
+[Canal YouTube Loiane Groner](https://www.youtube.com/watch?v=qJnjz8FIs6Q&list=PLGxZ4Rq3BOBpwaVgAPxTxhdX_TfSVlTcY&index=1)
 
 ---
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
