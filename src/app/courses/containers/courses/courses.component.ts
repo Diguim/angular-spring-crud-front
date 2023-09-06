@@ -54,12 +54,13 @@ export class CoursesComponent implements OnInit {
   onRemove(course: Course) {
 
     const dialogRef = this.dialog.open(ConfirmationDialogComponent,
-      { data: "Tem certeza que deseja remover esse curso?"
+      { data: 'Tem certeza que deseja remover esse curso?'
     });
 
     dialogRef.afterClosed().subscribe((result: boolean) => {
       if (result) {
-        this.coursesService.remove(course._id).subscribe(() => {
+        this.coursesService.remove(course._id).subscribe(
+          () => {
           this.refresh();
           this.snackBar.open('Removido com sucesso!', 'X', {
             duration: 5000,
@@ -67,8 +68,8 @@ export class CoursesComponent implements OnInit {
             horizontalPosition: 'center'
           });
         },
-          error => this.onError('Erro ao tentar remover curso.')
-        )
+          () => this.onError('Erro ao tentar remover curso.')
+        );
       }
     });
   }

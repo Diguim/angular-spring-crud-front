@@ -8,6 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
 
 import { CoursesRoutingModule } from './courses/courses-routing.module';
+import { AppMaterialModule } from './shared/app-material/app-material.module';
 
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'courses' },
@@ -27,7 +28,8 @@ const routes: Routes = [
     MatToolbarModule,
     CoursesRoutingModule,
     RouterModule.forRoot(routes),
-    HttpClientModule
+    HttpClientModule,
+    AppMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
