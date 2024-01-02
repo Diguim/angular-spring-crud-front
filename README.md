@@ -3,11 +3,12 @@
 Parte FRONT-END de um projeto de CRUD com os frameworks ANGULAR e SPRING (Java).
 
 #### Tecnologias utilizadas:
-- Angular 16
+- Angular 17 - Começou no 13 - e atualizou até o 17 - 02/01/2024
   - Components
   - Module
   - Service
   - Pipes
+  - Standalone components
 - Angular Material 
 - TypeScript
 - HTML CSS
