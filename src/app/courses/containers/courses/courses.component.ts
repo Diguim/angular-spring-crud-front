@@ -9,12 +9,19 @@ import { ConfirmationDialogComponent } from 'src/app/shared/components/confirmat
 import { ErrorDialogComponent } from 'src/app/shared/components/error-dialog/error-dialog.component';
 import { Course } from '../../model/course';
 import { CoursePage } from '../../model/course-page';
-import { MatPaginator, PageEvent } from '@angular/material/paginator';
+import { MatPaginator, PageEvent, MatPaginatorModule } from '@angular/material/paginator';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { CoursesListComponent } from '../../components/courses-list/courses-list.component';
+import { NgIf, AsyncPipe } from '@angular/common';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
-  selector: 'app-courses',
-  templateUrl: './courses.component.html',
-  styleUrls: ['./courses.component.css']
+    selector: 'app-courses',
+    templateUrl: './courses.component.html',
+    styleUrls: ['./courses.component.css'],
+    standalone: true,
+    imports: [MatCardModule, MatToolbarModule, NgIf, CoursesListComponent, MatPaginatorModule, MatProgressSpinnerModule, AsyncPipe]
 })
 export class CoursesComponent implements OnInit {
 
